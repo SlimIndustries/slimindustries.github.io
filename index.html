@@ -31,10 +31,11 @@ h1 em{font-style:normal;color:var(--acc)}
 .card p{margin:6px 0 0;color:var(--muted)}
 .tag{font:700 15px var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--acc);display:inline-block;margin-top:8px}
 .more{color:var(--muted);margin:16px 0 0;font-size:16px}
-footer{margin-top:80px;padding:26px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
-footer p{margin:0 0 8px}
-.links a{margin-right:18px}
-@media(max-width:520px){.card{flex-direction:column;align-items:flex-start}.top nav{gap:14px}}
+footer{margin-top:80px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;display:flex;gap:40px 64px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
+footer .l{display:flex;flex-direction:column;gap:6px}
+footer .r{max-width:460px;margin:0;line-height:1.5}
+footer b{font:700 18px var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--text);margin-bottom:4px}
+@media(max-width:520px){.card{flex-direction:column;align-items:flex-start}.top nav{gap:12px;font-size:14px}.brand{font-size:17px;gap:8px;white-space:nowrap;letter-spacing:.03em}.top{gap:10px}.brand img{width:38px;height:38px}}
 </style></head><body>
 <div class="wrap">
 <header class="top">
@@ -56,9 +57,10 @@ footer p{margin:0 0 8px}
 <p class="more">More coming soon.</p>
 </section>
 <footer>
-<p>Support: <a href="mailto:slimindustries.apps@gmail.com">slimindustries.apps@gmail.com</a></p>
-<p class="links"><a href="https://discord.gg/t7JKtse7TJ">Discord</a></p>
-<p>M.U.L.E. is an unofficial fan-made app and is not affiliated with or endorsed by Bethesda Softworks or ZeniMax. Fallout is a trademark of its owners.</p>
+<div class="l"><b>Slim Industries</b>
+<a href="mailto:slimindustries.apps@gmail.com">slimindustries.apps@gmail.com</a>
+<a href="https://discord.gg/t7JKtse7TJ">Discord</a></div>
+<p class="r">M.U.L.E. is an unofficial fan-made app and is not affiliated with or endorsed by Bethesda Softworks or ZeniMax. Fallout is a trademark of its owners.</p>
 </footer>
 </div>
 </body></html>
