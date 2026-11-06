@@ -1,46 +1,54 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Slim Industries</title>
-<meta name="description" content="Slim Industries makes small, useful apps. Currently: M.U.L.E., an unofficial Fallout 76 stash tracker for Android.">
-<meta property="og:title" content="Slim Industries"><meta property="og:description" content="Small, useful apps. Currently: M.U.L.E., a Fallout 76 stash tracker for Android."><meta property="og:image" content="https://slimindustries.github.io/assets/social.png"><link rel="icon" href="assets/icon.png">
+<meta name="description" content="Slim Industries: slim apps, heavy lifting. Currently: M.U.L.E., an unofficial Fallout 76 stash tracker for Android.">
+<meta property="og:title" content="Slim Industries"><meta property="og:description" content="Slim apps. Heavy lifting."><meta property="og:image" content="https://slimindustries.github.io/assets/social.png"><meta property="og:type" content="website">
+<link rel="icon" href="assets/logo-256.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Saira+Condensed:wght@600;700;800&display=swap">
 <style>
-:root{--bg:#0e1411;--surface:#151e19;--line:#27402f;--green:#6ee7a0;--amber:#e6b23e;--text:#d8e7de;--muted:#93aa9c;--ink:#07130c;--display:"Share Tech Mono",ui-monospace,Menlo,Consolas,monospace;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color-scheme:dark}
+:root{--bg:#0a1030;--surface:#121b4a;--line:#26357f;--text:#eef1ff;--muted:#9aa7e0;--acc:#4d7cff;--accl:#7da0ff;
+--head:"Saira Condensed","Arial Narrow","DejaVu Sans Condensed",Impact,sans-serif;--body:Barlow,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--body);padding:0 max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px))}
-a{color:var(--green);text-underline-offset:3px}
-a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
-.wrap{max-width:860px;margin:0 auto}
-h1,h2{font-family:var(--display);font-weight:400;margin:0}
-.top{display:flex;align-items:center;gap:12px;padding:22px 0;border-bottom:1px solid var(--line);font-family:var(--display);font-size:20px}
-.top img{border-radius:8px}
-.hero{padding:64px 0 40px}
-.hero h1{font-size:clamp(34px,7vw,56px);line-height:1.1;color:var(--green)}
-.hero p{max-width:560px;margin:18px 0 0;color:var(--muted);font-size:19px}
-.label{font-family:var(--display);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin:0 0 16px}
-.proj{display:flex;gap:22px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none;color:var(--text)}
-.proj:hover{border-color:var(--green)}
-.proj img{width:84px;height:84px;border-radius:16px;flex:none}
-.proj h2{font-size:26px;color:var(--green)}
-.proj p{margin:6px 0 0;color:var(--muted)}
-.tag{display:inline-block;margin-top:10px;font-family:var(--display);font-size:14px;color:var(--amber)}
-.more{margin-top:18px;color:var(--muted);font-family:var(--display)}
-footer{margin-top:72px;padding:26px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 18px/1.6 var(--body);padding:0 max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accl);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accl);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto}
+.top{display:flex;align-items:center;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:14px;font:700 24px var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--text);text-decoration:none}
+.brand img{width:44px;height:44px;border-radius:8px}
+.top nav{margin-left:auto;display:flex;gap:22px;font-size:16px}
+.top nav a{color:var(--muted);text-decoration:none}.top nav a:hover{color:var(--text)}
+.hero{padding:72px 0 28px}
+h1{font:800 clamp(46px,9vw,84px)/.98 var(--head);text-transform:uppercase;margin:0;letter-spacing:.01em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--acc)}
+.hero p{max-width:540px;color:var(--muted);font-size:20px;margin:20px 0 0}
+.label{font:600 15px var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin:44px 0 14px}
+.card{display:flex;gap:22px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;color:var(--text);text-decoration:none}
+.card:hover{border-color:var(--acc)}
+.card img{width:84px;height:84px;border-radius:16px;flex:none}
+.card h2{font:800 30px var(--head);text-transform:uppercase;letter-spacing:.02em;margin:0;color:var(--accl)}
+.card p{margin:6px 0 0;color:var(--muted)}
+.tag{font:700 15px var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--acc);display:inline-block;margin-top:8px}
+.more{color:var(--muted);margin:16px 0 0;font-size:16px}
+footer{margin-top:80px;padding:26px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
 footer p{margin:0 0 8px}
 .links a{margin-right:18px}
-@media(max-width:520px){.proj{flex-direction:column;align-items:flex-start}}
+@media(max-width:520px){.card{flex-direction:column;align-items:flex-start}.top nav{gap:14px}}
 </style></head><body>
 <div class="wrap">
-<header class="top"><img src="assets/icon.png" alt="" width="34" height="34"> Slim Industries</header>
+<header class="top">
+<a class="brand" href="./"><img src="assets/logo-256.png" alt="" width="44" height="44"> Slim Industries</a>
+<nav aria-label="Page"><a href="#projects">Projects</a><a href="mailto:slimindustries.apps@gmail.com">Contact</a></nav>
+</header>
 <section class="hero">
-<h1>Small, useful apps.</h1>
-<p>Slim Industries is an indie developer. Everything here is built to be simple, private and fast, with no accounts and no ads.</p>
+<h1>Slim apps.<br><em>Heavy lifting.</em></h1>
+<p>Slim Industries is an indie developer. Simple, private apps with no accounts and no ads.</p>
 </section>
-<section>
+<section id="projects">
 <p class="label">Projects</p>
-<a class="proj" href="https://slimindustries.github.io/mule/">
-<img src="assets/icon.png" alt="" width="84" height="84">
+<a class="card" href="https://slimindustries.github.io/mule/">
+<img src="assets/mule-icon.png" alt="" width="84" height="84">
 <div><h2>M.U.L.E. Stash Tracker</h2>
 <p>An unofficial Fallout 76 stash tracker for Android. Every character, every account, one search. No account needed and it works offline.</p>
 <span class="tag">Android &middot; in testing &rarr;</span></div>
@@ -48,8 +56,8 @@ footer p{margin:0 0 8px}
 <p class="more">More coming soon.</p>
 </section>
 <footer>
-<p>Support: slimindustries.apps@gmail.com</p>
-<p class="links"><a href="https://slimindustries.github.io/mule-privacy/">M.U.L.E. privacy policy</a><a href="https://discord.gg/t7JKtse7TJ">Discord</a></p>
+<p>Support: <a href="mailto:slimindustries.apps@gmail.com">slimindustries.apps@gmail.com</a></p>
+<p class="links"><a href="https://discord.gg/t7JKtse7TJ">Discord</a></p>
 <p>M.U.L.E. is an unofficial fan-made app and is not affiliated with or endorsed by Bethesda Softworks or ZeniMax. Fallout is a trademark of its owners.</p>
 </footer>
 </div>
